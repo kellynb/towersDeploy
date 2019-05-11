@@ -6,7 +6,7 @@ const all = require('./Routes/all');
 const cors = require('cors');
 const dotenv = require("dotenv");
 dotenv.config();
-console.log('hi')
+
 
 mongoose.connect(process.env.mongodburi, {useNewUrlParser: true});
 
