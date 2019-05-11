@@ -10,7 +10,10 @@ dotenv.config();
 
 mongoose.connect(process.env.mongodburi, {useNewUrlParser: true});
 
-app.use(express.static("public"));
+app.use(express.static("Public"));
+// app.get('*', (request, response) => {
+// 	response.sendFile(path.join(__dirname, 'public'));
+// });
 app.use(bodyParser.json());
 app.use(cors());
 app.use(all);
